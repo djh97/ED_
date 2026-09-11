@@ -1,0 +1,22 @@
+dimension,category,count,percentage,scenario_count
+expected_action,Escalate patient,132,73.333,180
+expected_action,Admission support,121,67.222,180
+expected_action,Reprioritize queue,90,50.0,180
+expected_action,Staffing alert,90,50.0,180
+expected_action,Bed reassignment,59,32.778,180
+expected_action,Discharge support,59,32.778,180
+expected_action,Monitor,10,5.556,180
+flow,critical,39,21.667,180
+flow,high,40,22.222,180
+flow,low,27,15.0,180
+flow,moderate,74,41.111,180
+staffing,adequate,49,27.222,180
+staffing,critical,90,50.0,180
+staffing,strained,41,22.778,180
+bed_capacity,critical,53,29.444,180
+bed_capacity,open,91,50.556,180
+bed_capacity,tight,36,20.0,180
+boarding,critical,40,22.222,180
+boarding,high,41,22.778,180
+boarding,low,63,35.0,180
+boarding,moderate,36,20.0,180

@@ -1,0 +1,6 @@
+configuration,scenario_runs,plans_with_validator_logs,initial_validation_failures,corrected_successes,unrecovered_validation_failures,execution_failures,initial_omission_rate,correction_success_rate
+full_dynamic,900,899,13,13,0,20,0.014461,1.0
+all_tools,900,900,20,19,1,21,0.022222,0.95
+without_safety_validation,900,0,0,0,0,16,0.0,0.0
+without_follow_up_tracking,900,900,10,10,0,22,0.011111,1.0
+non_agentic,900,0,0,0,0,0,0.0,0.0

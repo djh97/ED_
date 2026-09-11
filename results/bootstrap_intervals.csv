@@ -1,0 +1,14 @@
+comparison,metric,value,lower,upper
+all_tools_minus_full_dynamic,precision,-0.007495,-0.017707,0.00223
+all_tools_minus_full_dynamic,recall,-0.002139,-0.026197,0.021938
+all_tools_minus_full_dynamic,avg_action_quality,-0.007278,-0.022612,0.008067
+all_tools_minus_full_dynamic,avg_weighted_error_cost,0.151111,-0.528889,0.822278
+all_tools_minus_full_dynamic,avg_structural_explanation_completeness,-0.0008,-0.013397,0.011945
+all_tools_minus_full_dynamic,avg_response_time_ms,-3829.896189,-4805.649232,-2961.635149
+all_tools_minus_full_dynamic,escalation_recall,-0.00303,-0.017391,0.011765
+all_tools_minus_full_dynamic,target_precision,0.0,0.0,0.0
+all_tools_minus_full_dynamic,target_recall,-0.004598,-0.020988,0.012291
+all_tools_minus_full_dynamic,target_exact_set_accuracy,-0.00303,-0.017391,0.011765
+all_tools_minus_full_dynamic,failure_rate,0.001111,-0.012222,0.013333
+all_tools_minus_full_dynamic,avg_tools_invoked,0.045556,0.03,0.062222
+all_tools_minus_full_dynamic,tool_selection_fallback_rate,0.0,0.0,0.0

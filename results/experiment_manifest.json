@@ -1,0 +1,48 @@
+{
+  "run_id": "ed-20260901T194815.573100+0000",
+  "started_at": "2026-09-01T19:48:15.573100+00:00",
+  "completed_at": "2026-09-01T19:51:30.448418+00:00",
+  "git_commit": "8eecd4662213bd19f1e2fac756a254a9e4aaef2a",
+  "model": {
+    "input": "gpt-5-nano",
+    "orchestration": "gpt-5-nano",
+    "summary": "gpt-5-nano"
+  },
+  "prompt_schema_version": "dynamic-tools-v1",
+  "experiment": {
+    "runs": 5,
+    "scenario_seed": 2026,
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 2026,
+    "failure_policy": "score_as_failure",
+    "concurrency": 10
+  },
+  "python": "3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "dependencies": {
+    "fastapi": "0.137.1",
+    "uvicorn": "0.49.0",
+    "pydantic": "2.13.4",
+    "httpx": "0.28.1",
+    "openai": "1.109.1"
+  },
+  "command": [
+    "evaluation\\run_reproducible_experiment.py",
+    "--runs",
+    "5",
+    "--count",
+    "180",
+    "--scenario-seed",
+    "2026",
+    "--bootstrap-samples",
+    "10000",
+    "--bootstrap-seed",
+    "2026",
+    "--concurrency",
+    "10",
+    "--output-dir",
+    "evaluation_outputs\\main",
+    "--resume",
+    "--allow-checkpoint-writer-upgrade"
+  ]
+}

@@ -1,0 +1,83 @@
+configuration,run_index,scenario,status,error_type,error_message
+full_dynamic,0,mixed_127_high_multi_risk_strained_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,0,mixed_133_low_isolated_high_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,1,mixed_060_critical_isolated_critical_adequate_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,1,mixed_083_high_stable_adequate_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,1,mixed_088_low_isolated_high_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,1,mixed_148_critical_stable_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,2,staffing_crunch,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,2,mixed_138_low_isolated_critical_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 10 column 136 (char 1226)
+full_dynamic,2,mixed_142_moderate_multi_risk_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,2,mixed_146_moderate_stable_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,2,mixed_157_low_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Expecting property name enclosed in double quotes: line 57 column 1 (char 3213)
+full_dynamic,3,mixed_069_low_isolated_high_strained_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,3,mixed_097_low_stable_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,3,mixed_129_low_stable_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,4,mixed_013_low_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Expecting value: line 8 column 3 (char 1390)
+full_dynamic,4,mixed_059_high_isolated_critical_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,4,mixed_074_moderate_isolated_critical_strained_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 7 column 105 (char 834)
+full_dynamic,4,mixed_103_high_isolated_high_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,4,mixed_119_high_isolated_high_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+full_dynamic,4,mixed_173_low_multi_risk_strained_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,0,mixed_006_moderate_isolated_high_critical_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,0,mixed_079_high_multi_risk_adequate_tight,failed,RuntimeError,"ED Orchestration Agent LLM planning failed: Expecting ',' delimiter: line 16 column 21 (char 1637)"
+all_tools,0,mixed_089_low_isolated_critical_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,0,mixed_150_moderate_isolated_high_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,1,mixed_014_moderate_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,1,mixed_034_moderate_stable_critical_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 22 column 95 (char 1764)
+all_tools,1,mixed_113_low_stable_strained_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,2,mixed_024_critical_isolated_high_strained_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,2,mixed_069_low_isolated_high_strained_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,2,mixed_077_low_multi_risk_strained_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,2,mixed_093_low_multi_risk_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,2,mixed_139_low_isolated_critical_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,2,mixed_140_critical_isolated_critical_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,2,mixed_159_high_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,3,mixed_004_critical_stable_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,3,mixed_013_low_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,3,mixed_063_high_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,3,mixed_119_high_isolated_high_adequate_critical,failed,RuntimeError,"ED Orchestration Agent LLM planning failed: 1 validation error for RecommendationItem
+action
+  Input should be 'escalate_patient', 'reprioritize_queue', 'reassign_bed', 'admit_support', 'discharge_support', 'staffing_alert' or 'monitor' [type=literal_error, input_value='repriority_queue', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/literal_error"
+all_tools,4,mixed_019_high_stable_strained_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,4,mixed_026_moderate_isolated_critical_strained_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+all_tools,4,mixed_132_low_stable_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,0,mixed_077_low_multi_risk_strained_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,0,mixed_109_moderate_multi_risk_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,0,mixed_119_high_isolated_high_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,0,mixed_148_critical_stable_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,1,mixed_133_low_isolated_high_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,2,mixed_082_moderate_stable_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,2,mixed_109_moderate_multi_risk_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,2,mixed_111_low_multi_risk_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,2,mixed_140_critical_isolated_critical_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,2,mixed_150_moderate_isolated_high_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 24 column 168 (char 2851)
+without_safety_validation,3,mixed_090_moderate_isolated_critical_adequate_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 25 column 104 (char 3190)
+without_safety_validation,4,mixed_013_low_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,4,mixed_017_low_stable_strained_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,4,mixed_098_moderate_stable_strained_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 56 column 171 (char 3302)
+without_safety_validation,4,mixed_112_critical_multi_risk_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_safety_validation,4,mixed_123_high_isolated_critical_strained_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,0,mixed_057_low_isolated_critical_adequate_tight,failed,RuntimeError,"ED Orchestration Agent LLM planning failed: Expecting ',' delimiter: line 20 column 113 (char 1806)"
+without_follow_up_tracking,0,mixed_101_low_isolated_high_adequate_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,0,mixed_111_low_multi_risk_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 34 column 154 (char 3051)
+without_follow_up_tracking,0,mixed_150_moderate_isolated_high_adequate_open,failed,RuntimeError,"ED Orchestration Agent LLM planning failed: Expecting ',' delimiter: line 20 column 3 (char 2070)"
+without_follow_up_tracking,0,mixed_159_high_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,1,mixed_065_low_stable_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,2,mixed_058_moderate_isolated_critical_adequate_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 24 column 118 (char 3160)
+without_follow_up_tracking,2,mixed_059_high_isolated_critical_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 10 column 649 (char 1832)
+without_follow_up_tracking,2,mixed_096_critical_multi_risk_critical_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,2,mixed_108_critical_isolated_critical_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,2,mixed_160_critical_multi_risk_adequate_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,3,mixed_061_low_multi_risk_adequate_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,3,mixed_107_moderate_isolated_critical_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,3,mixed_108_critical_isolated_critical_adequate_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,3,mixed_116_critical_stable_strained_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,4,mixed_039_high_isolated_high_critical_open,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,4,mixed_045_low_multi_risk_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,4,mixed_082_moderate_stable_critical_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: Invalid control character at: line 53 column 132 (char 4856)
+without_follow_up_tracking,4,mixed_087_high_isolated_high_strained_tight,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,4,mixed_120_low_isolated_high_strained_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,4,mixed_132_low_stable_critical_critical,failed,RuntimeError,ED Orchestration Agent LLM planning failed: LLM returned no recommendations.
+without_follow_up_tracking,4,mixed_158_high_multi_risk_critical_open,failed,RuntimeError,"ED Orchestration Agent LLM planning failed: Expecting ',' delimiter: line 7 column 148 (char 1067)"
