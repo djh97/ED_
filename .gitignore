@@ -1,0 +1,37 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*secret*
+*token*
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Runtime and internal execution artifacts
+*.log
+evaluation_outputs/
+checkpoints/
+**/checkpoints/
+**/superseded_*/
+
+# Local datasets and temporary files
+data/
+tmp/
+.tmp/
+*.bkp
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
