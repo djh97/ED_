@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-05-19T10:00:00Z",
+  "current_queue_length": 18,
+  "arrivals_last_hour": 21,
+  "average_wait_minutes": 74,
+  "boarding_patients": 6,
+  "patients": [
+    {
+      "patient_id": "ED-001",
+      "age": 78,
+      "triage_level": 2,
+      "heart_rate": 126,
+      "systolic_bp": 86,
+      "respiratory_rate": 28,
+      "oxygen_saturation": 90,
+      "temperature_c": 38.8,
+      "has_abnormal_labs": true,
+      "suspected_sepsis": true,
+      "pain_score": 7,
+      "waiting_minutes": 45
+    },
+    {
+      "patient_id": "ED-002",
+      "age": 44,
+      "triage_level": 3,
+      "heart_rate": 98,
+      "systolic_bp": 118,
+      "respiratory_rate": 18,
+      "oxygen_saturation": 96,
+      "temperature_c": 37.2,
+      "has_abnormal_labs": false,
+      "suspected_sepsis": false,
+      "pain_score": 5,
+      "waiting_minutes": 132
+    },
+    {
+      "patient_id": "ED-003",
+      "age": 67,
+      "triage_level": 3,
+      "heart_rate": 108,
+      "systolic_bp": 102,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 93,
+      "temperature_c": 37.7,
+      "has_abnormal_labs": true,
+      "suspected_sepsis": false,
+      "pain_score": 4,
+      "waiting_minutes": 96
+    }
+  ],
+  "staffing": {
+    "available_nurses": 4,
+    "available_physicians": 2,
+    "nurse_capacity_per_hour": 4,
+    "physician_capacity_per_hour": 6,
+    "staff_absence_flag": true
+  },
+  "beds": {
+    "total_beds": 24,
+    "occupied_beds": 23,
+    "discharge_ready_beds": 2,
+    "high_acuity_beds_available": 1
+  }
+}
