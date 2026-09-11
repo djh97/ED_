@@ -80,7 +80,7 @@ def plot_expected_actions(output_path: Path, scenario_count: int, counts: Counte
 
 def plot_operational_states(output_path: Path, scenario_count: int, counts: dict[str, Counter[str]]) -> None:
     dimensions = (
-        (f"Flow assessment\n(n = {scenario_count})", "flow", ("low", "moderate", "high", "critical")),
+        (f"Crowding\n(n = {scenario_count})", "flow", ("low", "moderate", "high", "critical")),
         (f"Staffing\n(n = {scenario_count})", "staffing", ("adequate", None, "strained", "critical")),
         (f"Bed capacity\n(n = {scenario_count})", "bed_capacity", ("open", None, "tight", "critical")),
         (f"Boarding\n(n = {scenario_count})", "boarding", ("low", "moderate", "high", "critical")),
@@ -124,7 +124,7 @@ def plot_operational_states(output_path: Path, scenario_count: int, counts: dict
                 )
         bottoms = [bottom + value for bottom, value in zip(bottoms, values)]
 
-    ax.set_title("Tool-derived operational state distributions", weight="bold")
+    ax.set_title("Operational pressure levels", weight="bold")
     ax.set_ylabel("Number of scenarios")
     ax.set_xticks(list(x_positions), [label for label, _, _ in dimensions])
     ax.set_ylim(0, scenario_count * 1.10)
