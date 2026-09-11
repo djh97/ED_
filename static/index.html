@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic AI Decision Support System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Research System</p>
+        <h1>Agentic AI for Emergency Department Operations and Care Escalation</h1>
+        <p class="lead">
+          A single orchestration agent evaluates emergency department pressure by combining four tools:
+          flow prediction, patient risk, staffing availability, and bed management.
+        </p>
+      </div>
+      <div class="hero-card">
+        <div class="mini-grid">
+          <div>
+            <span class="mini-label">Architecture</span>
+            <strong>1 Agent + 4 Tools</strong>
+          </div>
+          <div>
+            <span class="mini-label">Mode</span>
+            <strong>Decision Support</strong>
+          </div>
+          <div>
+            <span class="mini-label">Output</span>
+            <strong>Explainable Actions</strong>
+          </div>
+          <div>
+            <span class="mini-label">Status</span>
+            <strong id="api-status">Checking API...</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <section class="panel input-panel">
+        <div class="panel-head">
+          <div>
+            <p class="section-kicker">Input</p>
+            <h2>ED Case Payload</h2>
+          </div>
+          <div class="actions">
+            <button id="load-sample" class="ghost-button" type="button">Load Sample</button>
+            <button id="run-evaluation" class="primary-button" type="button">Run Evaluation</button>
+          </div>
+        </div>
+        <p class="helper">
+          Edit the JSON directly or load the built-in emergency department sample case.
+        </p>
+        <textarea id="payload-editor" spellcheck="false"></textarea>
+      </section>
+
+      <section class="panel output-panel">
+        <div class="panel-head">
+          <div>
+            <p class="section-kicker">Output</p>
+            <h2>Recommended Actions</h2>
+          </div>
+        </div>
+        <div id="summary-card" class="summary-card empty">
+          <p>Run the evaluation to see the orchestrator summary and recommended actions.</p>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-block">
+            <h3>Recommendations</h3>
+            <div id="recommendations-list" class="stack empty-state">No recommendations yet.</div>
+          </div>
+          <div class="result-block">
+            <h3>Follow-Up Plan</h3>
+            <div id="follow-up-list" class="stack empty-state">No follow-up tasks yet.</div>
+          </div>
+          <div class="result-block">
+            <h3>Tool Outputs</h3>
+            <div id="tool-output-list" class="stack empty-state">No tool outputs yet.</div>
+          </div>
+          <div class="result-block">
+            <h3>Agent Trace</h3>
+            <div id="agent-trace-list" class="stack empty-state">No agent trace yet.</div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
