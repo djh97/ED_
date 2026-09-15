@@ -71,6 +71,7 @@ class EDOrchestrationAgent:
         self._last_safety_log: list[SafetyValidationEvent] = []
 
     def decide(self, ed_input: EDRequest | dict[str, Any] | str) -> EDDecisionResponse:
+        self._last_safety_log = []
         input_result = self._input_agent.normalize(ed_input)
         ed_input = input_result.ed_request
         tool_selection = self._select_tools(ed_input)
@@ -176,7 +177,6 @@ class EDOrchestrationAgent:
         try:
             prompt = build_orchestration_prompt(ed_input, tool_outputs)
             recommendations, planning_trace = self._request_llm_plan(prompt)
-            self._last_safety_log = []
             if self._enable_safety_validation:
                 validation_feedback = _required_escalation_feedback(recommendations, tool_outputs)
                 self._last_safety_log.append(
