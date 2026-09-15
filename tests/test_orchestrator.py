@@ -120,6 +120,33 @@ class OrchestratorTests(unittest.TestCase):
         self.assertEqual(len(agent._last_safety_log), 2)
         self.assertFalse(agent._last_safety_log[-1].passed)
 
+    def test_safety_log_is_cleared_before_a_new_failed_cycle(self) -> None:
+        payload = json.loads(Path("demo_data/sample_case.json").read_text(encoding="utf-8"))
+        request = EDRequest(**payload)
+        valid = _plan([
+            {
+                "action": "escalate_patient",
+                "priority": "urgent",
+                "target_id": "ED-001",
+                "reason": "Patient-risk evidence requires immediate escalation.",
+            }
+        ])
+        client = _FakeClient([valid, _plan([])])
+        agent = EDOrchestrationAgent(
+            use_llm_summary=False,
+            use_llm_input=False,
+            planner_client=client,
+            tool_selector=lambda _: ["patient_risk"],
+        )
+
+        first = agent.decide(request)
+        self.assertEqual(len(first.safety_validation_log), 1)
+
+        with self.assertRaises(RuntimeError):
+            agent.decide(request)
+
+        self.assertEqual(agent._last_safety_log, [])
+
     def test_evaluation_records_runner_failure_without_aborting(self) -> None:
         class FailingRunner:
             def decide(self, _: EDRequest):
