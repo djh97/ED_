@@ -58,6 +58,8 @@ Hosted model behavior and API latency can change. Therefore, a new live-model ru
 - `results/weighted_error_sensitivity.csv`: the 27-combination weighted-error sensitivity analysis.
 - `results/benchmark_figure_counts.csv`: source counts for Figure 3.
 
+During public-artifact verification, 61 failed records were found to contain the immediately preceding cycle's safety-validation log because the log was cleared only after an initial plan was parsed. Those stale log fields were cleared in `results/scenario_results.jsonl`; predicted actions, targets, failure statuses, scores, and all other experiment fields were unchanged. One `all_tools` failure containing a genuine current-cycle validation event was retained. The safety-log lifecycle is corrected in `app/agentic_system.py` and covered by a regression test.
+
 The large nested `experiment_results.json`, individual scenario checkpoint files, live console logs, and background-run metadata are excluded because they duplicate the included reader-facing records or expose execution history that is not required to verify the reported results.
 
 ## Regenerate the figures
@@ -72,4 +74,3 @@ Figure 3 is regenerated from `build_evaluation_scenarios(count=180, seed=2026)`.
 ## Scope of the evidence
 
 The benchmark uses rule-derived software labels and synthetic ED scenarios. It evaluates software behavior and internal conformance, not clinical validity, patient outcomes, or operational effectiveness in a live ED. The benchmark oracle and safety validator use separate patient-risk calculations; their target sets agree for the 180 reported scenarios, but equivalence is not guaranteed by construction.
-
